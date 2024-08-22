@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "popins", sans-serif;
+  font-family: 'popins' , sans-serif;
 }
 
 body {
@@ -40,13 +40,13 @@ body {
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
-  transition: 0.3s;
+  transition: .3s;
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
 
-.navbar a:hover {
+.navbar a:hover{
   color: #0ef;
 }
 .home {
@@ -54,7 +54,7 @@ body {
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url("/assets/Background.jpeg") no-repeat;
+  background: url('./assets/02.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -133,12 +133,23 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
-  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  box-shadow: 0 0 5px #0ef,
+  0 0 25px #0ef
+
 }
 .btn-box:hover {
-  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
-    0 0 200px cyan;
+  box-shadow: 0 0 5px cyan,
+   0 0 25px cyan, 0 0 50px cyan,
+   0 0 100px cyan, 0 0 200px cyan;
 }
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
 
 @keyframes slideRight {
   0% {
