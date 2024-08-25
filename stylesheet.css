@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: 'popins' , sans-serif;
 }
 
@@ -83,7 +84,7 @@ body {
   animation: slideBottom 1s ease forwards;
   animation-delay: 0.7s;
 }
-.home-content h3:nth-of-type(2) {
+.home-content h3:nth-of-type(2){
   margin-bottom: 30px;
   animation: slideTop 1s ease forwards;
   animation-delay: 0.7s;
@@ -191,7 +192,7 @@ body {
     line-height: 1.4;
     margin-bottom: 4rem;
 }
-#services{
+.services{
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
@@ -205,16 +206,16 @@ body {
 .sub-title span{
     color: #0ef;
 }
-.container {
+.container{
     padding: 90px;
 }
-.servces-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(29px,1fr));
+.services-list{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.servces-list div{
+.services-list div{
     background-color: transparent;
     padding: 40px;
     font-size: 13px;
@@ -225,17 +226,22 @@ body {
     box-shadow: 1px 1px 20px #012290f7,
                 1px 1px 40px #0053b8f7;
 }
-.servces-list div i {
+.services-list div i{
     font-size: 50px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
-.servces-list div a{
+.services-list div a{
     text-decoration: none;
     color: #000000;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 .read {
     display: inline-block;
@@ -253,17 +259,18 @@ body {
     box-shadow: 0 0 5px #0ef,
                 0 0 25px #0ef;
 }
+.services-list div:hover{
+    transform: translateY(-10px);
+}
 
 .read:hover {
     box-shadow: 0 0 5px cyan,
    0 0 25px cyan, 0 0 50px cyan,
    0 0 100px cyan, 0 0 200px cyan;
 }
-.servces-list div:hover{
-    transform: translateY(-10px);
-}
 
-section{
+
+#section{
     display: flex;
     flex-wrap: wrap;
 }
@@ -314,7 +321,7 @@ section{
 }
 @keyframes animate{
     100%{
-        transform: scaleX();
+        transform: scaleX(1);
     }
 }
 .Technical-bars .bar .progress-line span{
@@ -332,13 +339,13 @@ section{
 .progress-line.css span{
     width: 60%;
 }
-.progress-line.javascript span{
+.progress-line.Javascript span{
     width: 85%;
 }
 .progress-line.python span{
     width: 50%;
 }
-.progress-line.reactjs span{
+.progress-line.react span{
     width: 75%;
 }
 .progress-line span::after{
@@ -365,10 +372,10 @@ section{
 .progress-line.python span::after{
     content: 50%;
 }
-.progress-line.reactjs span::after{
+.progress-line.react span::after{
     content: 75%;
 }
-.progress-line span::after{
+.progress-line span::before{
     content: "";
     position: absolute;
     width: 0;
@@ -391,9 +398,9 @@ section{
 .radial-bars{
     width: 100%;
     display: flex;
-    height: 170px;
-    margin-bottom: 10px;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 .radial-bars .radial-bar{
     width: 50%;
@@ -671,6 +678,27 @@ path {
     box-shadow: 0 0 5px cyan,
    0 0 25px cyan, 0 0 50px cyan,
    0 0 100px cyan, 0 0 200px cyan;
+}
+
+.last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 25px o;
+    background: rgb(2, 85, 91);
+    font-weight: 300;
+    margin-top: 70px;
+}
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+.top i{
+    color: #000;
+    background: #0ef;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
 }
 
 
