@@ -1,7 +1,8 @@
-var typed= new typed(".text", {
-    strings: ["Frontend Developer","Web Developer"],
-    typeSpeed:100,
-    backSpeed:100,
-    backDelay:1000,
-    loop:true
-})
+document.addEventListener("DOMContentLoaded", function () {
+    var typed = new Typed(".text", {
+        strings: ["Web Developer", "UI/UX Designer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 40,
+        loop: true
+    });
+});
