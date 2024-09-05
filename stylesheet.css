@@ -271,6 +271,7 @@ body {
 
 /*skills*/
 
+/* General styles */
 #skills {
     padding: 100px;
     background: #0c152b;
@@ -287,6 +288,7 @@ body {
     color: white;
 }
 
+/* Technical Skills */
 .Technical-bars {
     display: flex;
     justify-content: space-between;
@@ -304,6 +306,7 @@ body {
 
 .bar .info {
     margin-bottom: 10px;
+    color: white;
 }
 
 .bar .progress-line {
@@ -318,9 +321,10 @@ body {
     position: absolute;
     height: 100%;
     background: #59e820;
-    width: 90%; /* Adjust width as per skill level */
+    width: 0; 
 }
 
+/* Professional Skills */
 .radial-bars {
     display: flex;
     justify-content: space-between;
@@ -332,7 +336,6 @@ body {
     margin-right: 20px;
     position: relative;
 }
-
 
 .radial-bar:last-child {
     margin-right: 0;
@@ -355,9 +358,25 @@ body {
     fill: none;
     stroke: #ec5fc9;
     stroke-width: 10;
-    stroke-dasharray: 502;
-    stroke-dashoffset: 50; /* Adjust offset as per percentage */
+    stroke-dasharray: 502; 
+    stroke-dashoffset: 502; 
     transition: stroke-dashoffset 1s linear;
+}
+
+.radial-bar .path-1 {
+    stroke-dashoffset: calc(502 - (502 * 90 / 100)); /* 90% */
+}
+
+.radial-bar .path-2 {
+    stroke-dashoffset: calc(502 - (502 * 80 / 100)); /* 80% */
+}
+
+.radial-bar .path-3 {
+    stroke-dashoffset: calc(502 - (502 * 75 / 100)); /* 75% */
+}
+
+.radial-bar .path-4 {
+    stroke-dashoffset: calc(502 - (502 * 90 / 100)); /* 90% */
 }
 
 .radial-bar .percentage {
@@ -374,6 +393,7 @@ body {
     font-size: 18px;
     color: #c2c2c2;
 }
+
 
 /*portfolio*/
 
@@ -465,7 +485,7 @@ body {
 .contact-text h2{
     font-size: 90px;
     line-height: 1;
-    text-align: center;
+    text-align: left;
 }
 .contact-text h2 span{
     color: #0ef;
@@ -539,7 +559,7 @@ body {
     width: 90%;
     padding: 18px;
     background: #555557;
-    color: #000;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
