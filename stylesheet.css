@@ -9,6 +9,13 @@
 body {
   color: #ededed;
   background: #081b29;
+  padding: 0;
+  margin: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 .header {
@@ -21,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .logo {
@@ -35,6 +42,9 @@ body {
   animation: slideRight 1s ease forwards;
 }
 
+.navbar{
+    display: flex;
+}
 .navbar a {
   display: inline-block;
   font-size: 25px;
@@ -46,11 +56,16 @@ body {
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
+  padding: 0px;
 }
 
 .navbar a:hover{
   color: #0ef;
 }
+.navbar a:active{
+    color: #0ef;
+  }
+
 .home {
   position: relative;
   width: 100%;
@@ -67,17 +82,19 @@ body {
     padding-bottom: 0%;
     max-width: 500px;
     height: auto;
-    width: auto;
+    width: 100%;
     margin-left: auto;
     margin-top: auto;
+    flex: 1;
 }
 
 .home-content {
   max-width: 600px;
+  flex: 1;
 }
 
 .home-content h3 {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 700;
   opacity: 0;
   animation: slideBottom 1s ease forwards;
@@ -93,7 +110,7 @@ body {
 }
 
 .home-content h1 {
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 700;
   margin: -3px 0;
   opacity: 0;
@@ -101,9 +118,11 @@ body {
   animation-delay: 1s;
 }
 .about-img img{
-    padding-bottom: 20%;
-    max-width: 630px;
+    padding-bottom: 0%;
+    padding: 20px;
+    max-width: 530px;
     height: auto;
+
     width: 100%;
     border-radius: 8px;
 }
@@ -166,7 +185,8 @@ body {
     gap: 1.5rem;
 }
 .about-img img{
-    padding-bottom: 20%;
+    margin-top: -20px;
+    padding-bottom: 10%;
     max-width: 630px;
     height: auto;
     width: 100%;
@@ -271,7 +291,6 @@ body {
 
 /*skills*/
 
-/* General styles */
 #skills {
     padding: 100px;
     background: #0c152b;
@@ -328,6 +347,7 @@ body {
 .radial-bars {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .radial-bar {
@@ -626,7 +646,6 @@ body {
 
 
 
-
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
@@ -666,4 +685,32 @@ body {
     transform: translateY(0px);
     opacity: 1;
   }
+}
+
+
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+    }
+
+    .home-content{
+        padding: 20px;
+    }
+
+    .home-img{
+        max-width: 100%;
+    }
+
 }
