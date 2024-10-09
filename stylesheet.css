@@ -79,7 +79,7 @@ img{
   padding: 70px 10% 0;
 }
 .home-img img{
-    padding-bottom: 0%;
+    padding: 9%;
     max-width: 500px;
     height: auto;
     width: 100%;
@@ -119,7 +119,7 @@ img{
 }
 .about-img img{
     padding-bottom: 0%;
-    padding: 20px;
+    padding: 80px;
     max-width: 530px;
     height: auto;
 
