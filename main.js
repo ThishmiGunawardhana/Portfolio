@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var typed = new Typed(".text", {
-        strings: ["Web Developer", "UI/UX Designer", "Project Manager"],
+        strings: ["Project Manager", "Business Analyst", "UI/UX Designer"],
         typeSpeed: 100,
         backSpeed: 40,
         loop: true
@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.querySelector('.btn-box').addEventListener('click', function(e) {
     e.preventDefault();
     const link = document.createElement('a');
-    link.href = 'assets/LKTA Gunawardhana-PM.pdf';
-    link.download = 'LKTA Gunawardhana-PM.pdf';
+    link.href = 'assets/CV_Thishmi Gunawardhana.pdf';
+    link.download = 'CV_Thishmi Gunawardhana.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
